@@ -1,0 +1,341 @@
+
+body {
+  margin: 0;  
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Vollkorn:wght@700&display=swap');
+
+
+
+h1{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Vollkorn', serif;
+  font-size: 35px;  
+}
+nav{
+  display: flex;
+  flex-direction: row;
+}
+
+.item1{
+  flex: 1;
+}
+
+.item2{
+  flex: 1;
+  display: flex;
+  margin: 0;
+  height: 4rem;
+  align-items: center;
+}
+.item3{
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+
+.lightButton{
+  width: 4rem;
+  height: 4rem;
+  font-size: 30px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+
+.lightButton:hover{
+  background-color: rgb(205, 205, 205);
+  transition: 0.2s;
+}
+
+.darkButton{
+  width: 4rem;
+  height: 4rem;
+  font-size: 30px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: white;
+}
+
+.darkButton:hover{
+  background-color: rgb(56, 56, 56);
+  transition: 0.2s;
+}
+
+
+.darkBody{
+  background-color: #282828;
+  color: rgb(255, 255, 255);
+  transition: 0.2s;
+  width: 100%;
+  height: 100vh;
+  transition: 0.2s;
+}
+
+.lightBody{
+  background-color: #ffffff;
+  transition: 0.2s;
+  width: 100%;
+  height: 100vh;
+}
+
+.navLight{
+border-bottom-style: solid;
+border-bottom-color: rgb(154, 153, 153);
+border-width: 1px;
+}
+
+.navDark{
+  border-bottom-style: solid;
+  border-bottom-color: rgb(216, 216, 216);
+  border-width: 1px;
+  }
+
+/* creating wordle grid */
+#columns{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#rows{
+  display: flex;
+  flex-direction: row;
+
+}
+
+#grid{
+  padding-top: 2rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+/* to center wordle grid */
+.center{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  
+  
+}
+
+
+.box{
+  font-size: 30px;
+  font-weight:bolder;
+  padding: 20px;
+  display: flex;
+  width: 3rem;
+  height: 3rem;
+  margin: 2px ;
+  align-items: center;
+  justify-content: center;
+
+} 
+
+.boxDark{
+  border-style: solid;
+  border-color: rgb(199, 199, 199);
+  border-width: 1px;
+  /* font-size: x-large; */
+}
+
+
+.boxLight{
+  border-style: solid;
+  border-color: rgb(199, 199, 199);
+  border-width: 1px;
+}
+
+.startcontainer{
+  display: flex;
+  justify-content: center;
+  padding-top: 75px;
+  /* padding-bottom: 30px; */
+}
+.startButton{
+  background-color: #4B8B3B;
+  color: white;
+  font-size: 20px;
+  width: 33%;
+  height: 50px;
+  border-radius:8px;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  margin-bottom: 20px;
+  border: none;
+}
+
+
+
+ul{
+  font-size: 19px;
+  list-style-type: circle;
+}
+li{
+  padding-top: 6px;
+}
+
+.rulesContainer{
+  display: none;
+  margin-left: 5%;
+  border-left-style: solid;
+  padding-top: 5rem;
+  border-left-width: 1px;
+  border-color: rgb(154, 153, 153);
+}
+.containerDark{
+  background-color: #282828;
+  transition: 0.2s;
+}
+.containerLight{
+   background-color: white;
+   transition: 0.2s;
+ } 
+
+
+.bottomContainerDark{
+  background-color: #282828;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* padding: 70px; */
+  transition: 0.2s;
+}
+
+.hintSectionLight{
+  display: flex;
+  flex-direction: column;
+  background-color:  #ffffff; 
+  color: #000000;
+  align-items: center;
+  transition: 0.2s;
+
+}
+
+.hintSectionDark{
+  display: flex;
+  flex-direction: column;
+  background-color:  #282828;
+  color: white;
+  transition: 0.2s;
+}
+
+.centerHint{
+  /* display: flex;
+  flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer{
+  text-align: center;
+  border-top-style:solid;
+  border-top-color:rgb(154, 153, 153) ;
+  display: flex;
+  justify-content: center;
+  border-width:1px;
+  width: 100%;
+  padding-top:20px ;
+  padding-bottom: 20px;
+  position: relative;
+  bottom: 0;
+}
+
+.hintText{
+  
+  justify-content: center;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #ffe57e;
+  color: #000000;
+  display: none;
+  width: 100%;
+
+}
+
+@media only screen and (max-width: 720px) {
+  .center{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .rulesContainer{
+    display: none;
+    margin-left: 0%;
+    border-left-style: solid;
+    padding-top: 5rem;
+    border-left-width: 1px;
+    border-color: rgb(154, 153, 153);
+ 
+  }
+  .item1{
+    flex: 0;
+  }
+  .item2{
+    flex: 1;
+    display: flex;
+    margin: 0;
+    height: 4rem;
+    align-items: center;
+    padding-left: 20px;
+  }
+  
+}
+
+.greenLetter{
+  background-color: #6ca965;
+  color: white;
+}
+
+
+.yellowLetter{
+  background-color: #c8b653;
+  color: white;
+}
+
+.greyLetter{
+  background-color: #787c7f;
+  color: white;
+}
+
+.animated {
+  animation: flip 0.7s ease;
+}
+
+@keyframes flip {
+  0% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+#congratulations{
+  margin-top: -50px;
+  margin-bottom: -50px;
+  width: 100%;
+  display: none;
+}
+
+#theGrid{
+  display:block;
+
+}
+
+.activeBox{
+  border-width: 2px;
+
+}

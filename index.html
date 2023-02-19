@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title> 
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+
+    <div class="lightBody" id="body">
+      <div>
+    <header>
+      <nav class="navLight" id="navbar">
+        <div class="item1"></div>
+        <div>
+        <h1 class="item2">Wordle</h1>
+        </div>
+        <div class="item3">
+          <button class="lightButton navButton" id="hint">&#63;</button>
+          <button class="lightButton navButton" id="darkMode">&#9681;</button>
+          <button class="lightButton navButton" id="information">&#9432;</button>
+          
+        </div>
+      </nav>
+    </header>
+    
+      <div class="center">
+        <div id="grid">
+          <div id="columns">
+            <div  id="toHide">
+              <IMG SRC="https://res.cloudinary.com/mkf/image/upload/v1675467141/ENSF-381/labs/congrats_fkscna.gif" id = "congratulations">
+                <div id="theGrid">
+            <div id="rows">
+              <!-- row first then column -->
+              <div class="box boxLight" id="box11"></div>
+              <div class="box boxLight" id="box12"></div>
+              <div class="box boxLight" id="box13"></div>
+              <div class="box boxLight" id="box14"></div>
+            </div> 
+            <div id="rows">
+              <div class="box boxLight" id="box21"></div>
+              <div class="box boxLight" id="box22"></div>
+              <div class="box boxLight" id="box23"></div>
+              <div class="box boxLight" id="box24"></div>
+            </div> 
+            <div id="rows">
+              <div class="box boxLight" id="box31"></div>
+              <div class="box boxLight" id="box32"></div>
+              <div class="box boxLight" id="box33"></div>
+              <div class="box boxLight" id="box34"></div>
+            </div>
+            <div id="rows">
+              <div class="box boxLight" id="box41"></div>
+              <div class="box boxLight" id="box42"></div>
+              <div class="box boxLight" id="box43"></div>
+              <div class="box boxLight" id="box44"></div>
+            </div>
+          </div>
+          </div>
+            <div class="startcontainer">
+              <button class="startButton">Start Over</button>
+            </div>
+          </div>
+        </div>
+      
+        <div class="rulesContainer containerLight" id='rulesContainer'>
+          <ul class="rules">
+            <h2>How To Play</h2>
+            <li>Start typing. The letters will appear in the boxes</li>
+            <li>Remove letters with backspace</li>
+            <li>Hit Enter/Return to submit an answer</li>
+            <li>Letters with a green background are in the right spot</li>
+            <li>letters with yellow background exist in the word, but are in the wrong spots</li>
+            <li>Letters with a grey background do not exist in the word</li>
+            <li>If you need a hint, click the &#63; icon</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="hintSectionLight"  id="hintSection">
+        <div class="hintText"></div>
+        <div class="footer">&copy; Vishnu Dhanda 2023</div>
+      </div>
+    </div>
+  </div>
+  </div>
+    
+  </div>
+    <script src="./wordle.js"></script>
+  </body>
+  
+</html>
